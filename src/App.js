@@ -2,7 +2,6 @@ import logo from './logo.svg';
 import './App.css';
 import React, {useState} from 'react';
 import {Button} from './components/Button';
-import { TextBox } from './components/TextBox';
 import headshot from "./headshot.jpg"
 import {AboutMe} from './components/AboutMe'
 import { Coursework } from './components/Coursework';

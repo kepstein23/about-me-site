@@ -34,7 +34,7 @@ export function Header () {
                 <h1 style={{marginTop: 0}}>Hi, My Name is Kimberly Epstein.</h1>
                 <div style={{padding:"5px", display:"flex", justifyContent:"center"}} > 
                     <div style={{padding:"5px"}}> 
-                        <Button children="View my Resume" />
+                        <Button children="View my Resume" handleClick={() => handleRedirect("https://drive.google.com/file/d/1cOaLHX2OCSB5ua9_7MOLgwstVmWO9VvM/view?usp=sharing")}/>
                     </div>
                     <div style={{padding:"5px"}}>
                         <Button handleClick={() => handleRedirect("https://github.com/kepstein23")} children="View my Github"/>
