@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #487583;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -114,4 +114,9 @@
   font-family: "Candara";
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.background {
+  background-color: #487583;
+  margin: 0;
 }

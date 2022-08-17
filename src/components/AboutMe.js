@@ -1,4 +1,7 @@
-function AboutMe() {
+import React from "react";
+import headshot from "../headshot.jpg"
+
+export function AboutMe() {
     return (
         <div style={{padding:"5px"}}>
             <div className="textBox">
@@ -17,9 +20,9 @@ function AboutMe() {
                 </div>
               </div>
             </div>
-        <div>
+        </div>
     )
-)
 }
+
 
 
