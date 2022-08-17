@@ -38,12 +38,15 @@
 }
 .textBox {
   background: #8adef880;
-  border: 1px solid #8adef8;
-  border-radius: 6px;
-  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  border: 2px solid #8adef8;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 2px 4px 8px;
   margin: auto;
   width: 60%;
-  padding: 10px;
+  padding-bottom: 1px;
+  padding-top: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .title {
@@ -84,4 +87,31 @@
 
 .button:active {
   opacity: .5;
+}
+
+.heading {
+  background: #487583;
+  border: 2px solid #487583;
+  color: #ffffffd7;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 2px 4px 8px;
+  margin: auto;
+  width: 45%;
+  padding-bottom: 1px;
+  padding-top: 1px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+}
+
+.subtitle {
+  font-family: "Candara";
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.text {
+  font-family: "Candara";
+  margin-top: 0;
+  margin-bottom: 0;
 }
