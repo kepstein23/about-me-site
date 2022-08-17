@@ -6,36 +6,50 @@ export function Languages() {
     return (
         <div className="box">
             <div style={{display: "flex"}}>
-                <h2 className="subhead" style={{marginLeft: 0, marginBottom: 0}}>Proficient</h2>
-                <h1 className="head" style={{marginBottom: 50}}>Coding Language Proficiency</h1>
-                <h2 className="subhead" style={{marginRight: 0, marginBottom: 0}}>Advanced</h2>
+                <h1 className="head" style={{}}>Coding Language Proficiency</h1>
             </div>
             
-            <div style={{display: "flex", alignSelf: "center"}}>
-                <div>
-                    <LanguageBar language="PHP" background={"#d2eaf1a1"}/>
+            <div >
+                <h3 className="subtitle" style={{color:"white"}}>Java</h3>
+                <div class="container">
+                <div class="skills java">90%</div>
                 </div>
-                <div>
-                    <LanguageBar language="CSS" background={"#d2eaf1a5"}/>
+
+                <h3 className="subtitle" style={{color:"white"}}>JavaScript</h3>
+                <div class="container">
+                <div class="skills javascript">85%</div>
                 </div>
-                <div>
-                    <LanguageBar language="OCaml" background={"#d2eaf1b1"}/>
+
+                <h3 className="subtitle" style={{color:"white"}}>Python</h3>
+                <div class="container">
+                <div class="skills python">70%</div>
                 </div>
-                <div>
-                    <LanguageBar language="HTML"background={"#d2eaf1b7"}/>
+
+                <h3 className="subtitle" style={{color:"white"}}>R</h3>
+                <div class="container">
+                <div class="skills r">65%</div>
                 </div>
-                <div>
-                    <LanguageBar language="R" background={"#d2eaf1c5"}/>
+
+                <h3 className="subtitle" style={{color:"white"}}>HTML</h3>
+                <div class="container">
+                <div class="skills html">70%</div>
                 </div>
-                <div>
-                    <LanguageBar language="Python" background={"#d2eaf1d5"}/>
+
+                <h3 className="subtitle" style={{color:"white"}}>CSS</h3>
+                <div class="container">
+                <div class="skills css">60%</div>
                 </div>
-                <div>
-                    <LanguageBar language="Javascript" background={'#d2eaf1e5'}/>
+
+                <h3 className="subtitle" style={{color:"white"}}>OCaml</h3>
+                <div class="container">
+                <div class="skills ocaml">50%</div>
                 </div>
-                <div>
-                    <LanguageBar language="Java" background={"#d2eaf1"}/>
+
+                <h3 className="subtitle" style={{color:"white"}}>PHP</h3>
+                <div class="container">
+                <div class="skills php">40%</div>
                 </div>
+                
             </div>
         </div>
         
