@@ -140,58 +140,6 @@ function App() {
       </div>
       
     </div>
-      // <header>
-      //   Hi, I'm Kimberly Epstein. Welcome to my site!
-      // </header>
-      // <div style={{padding:"5px", display:"flex"}} >
-      //   <div style={{padding:"5px"}}> 
-      //     <Button children="View my Resume" />
-      //   </div>
-      //   <div style={{padding:"5px"}}>
-      //   <Button handleClick={() => handleRedirect("https://github.com/kepstein23")} children="View my Github"/>
-      //   </div>
-      //   <div style={{padding:"5px"}}>
-      //   <Button handleClick={() => handleRedirect("https://www.linkedin.com/in/kimberly-epstein/")} children="Connect on LinkedIn" />
-      //   </div>
-      // </div>
-      // <AboutMe />
-      //   {/* <TextBox 
-      //     title="About me"
-      //     texts={aboutMeText}
-      //     // text="Hi, my name is Kimberly Epstein.  I am a Junior at University of Pennsylvania pursuing a double major 
-      //     //   in Computer Science and Cognitive Science with minors in Consumer Psychology and Linguistics. I am passionate
-      //     //   about the intersection of mind and computer science, and have special interests in Artificial Intelligence and 
-      //     //   Natural Language Processing."
-      //   /> */}
-      //   <p></p>
-      //   <TextBox
-      //     title="Recent Experiences"
-      //     texts={experiencesTexts}
-      //   />
-      //   <p></p>
-      //   <Coursework />
-      //   <p></p>
-      // </div>
-      
   );
-  // return (
-  //   <div className="App">
-  //     <header className="App-header">
-  //       <img src={logo} className="App-logo" alt="logo" />
-  //       <p>
-  //         Edit <code>src/App.js</code> and save to reload.
-  //       </p>
-  //       <a
-  //         className="App-link"
-  //         href="https://reactjs.org"
-  //         target="_blank"
-  //         rel="noopener noreferrer"
-  //       >
-  //         Learn React
-  //       </a>
-  //     </header>
-  //   </div>
-  // );
 }
-
 export default App;
