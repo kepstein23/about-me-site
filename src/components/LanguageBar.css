@@ -1,0 +1,16 @@
+
+
+.circle {
+  padding: 20px;
+  border-radius: 10%;
+  text-align: center;
+  margin-top: 14px;
+  margin-left: 14px;
+  color: #487583;
+  position: absolute;
+  z-index: 100;
+  font-weight: 700;
+  font-size: 2em;
+  border-color: #c4dbe2;
+}
+
