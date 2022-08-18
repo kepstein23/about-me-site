@@ -85,9 +85,9 @@ function App() {
           <div style={{alignSelf: "center"}}>
             <AboutMe />
             <div style={{padding:"5px", paddingTop: "30px", display:"flex", justifyContent:"center"}} >
-            <div style={{padding:"5px"}}> 
+            {/* <div style={{padding:"5px"}}> 
               <Button handleClick={() => handleComponent("Languages")} children="Campus Involvement" />
-            </div>
+            </div> */}
             <div style={{padding:"5px"}}> 
               <Button handleClick={() => handleComponent("Coursework")} children="Relevant Coursework" />
             </div>
