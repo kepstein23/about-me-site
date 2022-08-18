@@ -30,8 +30,10 @@ export function TextBox({title, texts}) {
 
     return (
         <div className="textBox" style={{padding: "10px"}}>
-            <h1 className="heading">{title}</h1>
+            <h1 style={{marginTop: "15px"}} className="heading">{title}</h1>
+            <br />
             {displayText()}
+            <br/>
             {/* <h2>{subtitle}</h2>
             <p>{text}</p> */}
         </div>
