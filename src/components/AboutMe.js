@@ -11,7 +11,7 @@ export function AboutMe() {
                   <p>
                     Hi, my name is Kimberly Epstein.  I am a Junior at University of Pennsylvania pursuing a double major 
                     in Computer Science and Cognitive Science with minors in Consumer Psychology and Linguistics. I am passionate
-                    about the intersection of mind and computer science, and have special interests in Artificial Intelligence and 
+                    about the intersection of the mind and computer science, and have special interests in Artificial Intelligence and 
                     Natural Language Processing.
                   </p>
                 </div>

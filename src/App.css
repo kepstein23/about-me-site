@@ -165,3 +165,60 @@ body{
   border-radius: 50%;
   border: 1px solid #cdcbd0;
 }
+
+.solid-text {
+  background: #bfeaf7;
+  border: 2px solid #8adef8;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 2px 4px 8px;
+  margin: auto;
+  width: 85%;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.semesters {
+  background: #8adef8;
+  border: 2px solid #8adef8;
+  color: #487583;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 2px 4px 8px;
+  margin: auto;
+  width: 70%;
+  padding-bottom: 1px;
+  padding-top: 1px;
+  padding-left: 20px;
+  padding-right: 4px;
+  text-align: left;
+}
+
+.semesters:hover,
+.semesters:active {
+  background: #8adef8;
+  background-position: 0 0;
+  color: #FFFFFF;
+}
+
+.semesters:active {
+  opacity: .5;
+}
+
+.semesters-text {
+  padding-bottom: 1px;
+  padding-top: 1px;
+  padding-left: 4px;
+  padding-right: 4px;
+  text-align: left;
+
+}
+
+.semesters-icon {
+  padding-bottom: 1px;
+  padding-top: 1px;
+  padding-left: 4px;
+  padding-right: 4px;
+  text-align: left;
+  margin-right: 10px
+}

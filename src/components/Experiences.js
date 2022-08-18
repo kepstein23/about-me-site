@@ -1,7 +1,24 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { Button } from "./Button";
 import { TextBox } from "./TextBox";
+import App from "../App";
 
 export function Experiences() {
+  const storage = window.localStorage;
+  const [toRender, setToRender] = useState(window.localStorage.getItem("toRender"));
+
+  useEffect(() => {
+    console.log(window.localStorage.getItem("toRender"))
+    window.localStorage.setItem('toRender', toRender);
+  })
+
+  function handleComponent(component) {
+    storage.setItem("toRender", component);
+    setToRender(component);
+    console.log(storage.getItem("toRender"));
+  }
+
+
     const experiencesTexts = [
         {
           name:"subtitle",
@@ -9,7 +26,7 @@ export function Experiences() {
         },
         {
           name:"text",
-          content:"As a research asisstant, I worked to develop and implement a project focused on reducing affective polarization in group disucssions. Using React, JavaScript, and HTML, I developed an easy-to-navigate interface for participants to engage in live group discussions.  This experience provided an opportunity for me to apply computer science priciples to the study of mind and brain, developing my empirical awareness as well as technical skills."
+          content:"As a research asisstant in Dr. Watts' Lab at the University of Pennsylvania, I worked to develop and implement a project focused on reducing affective polarization in group disucssions. Using React, JavaScript, and HTML, I developed an easy-to-navigate interface for participants to engage in live group discussions.  This experience provided an opportunity for me to apply computer science priciples to the study of mind and brain, developing my empirical awareness as well as technical skills."
         },
         {
           name:"text",
@@ -30,11 +47,18 @@ export function Experiences() {
           content:"As a research intern, I designed, coded, and conducted a survey to ollect data related to how participants perceive credibility of tweets related to COVID-19.  I first wrote a python script to extract relevant tweets from over 400 Twitter users, then built the survey using HTML, CSS, and PHP.  This experience allowed me to combine my interests of computer science and cognitive science, using cognitive science pricinples to design and conduct the study, but computer science techniques to actually build the survey."
         }
       ]
+    if (toRender === "App") {
+      return(<App />);
+    }
 
     return (
+      <div>
+        <Button handleClick={() => handleComponent("App")} children="Back"></Button>
         <TextBox
-            title="Recent Experiences"
+            title="Recent Work Experiences"
             texts={experiencesTexts}
         />
+      </div>
+      
     )
 }

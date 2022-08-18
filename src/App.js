@@ -1,24 +1,36 @@
 import logo from './logo.svg';
 import './App.css';
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {Button} from './components/Button';
 import headshot from "./headshot.jpg"
 import {AboutMe} from './components/AboutMe'
 import { Coursework } from './components/Coursework';
+import { AllCourses } from './components/AllCourses';
 import { Header } from './components/Header';
 import { Experiences } from './components/Experiences';
 import { Languages } from './components/Languages';
 
 function App() {
+  const storage = window.localStorage;
+  const [toRender, setToRender] = useState(storage.getItem("toRender"))
+  useEffect(() => {
+    storage.setItem('toRender', "App")
+  }, [])
+  useEffect(() => {
+    storage.setItem('toRender', toRender);
+  })
 
-  const [toRender, setToRender] = useState("App");
+  // const [toRender, setToRender] = useState("App");
 
   function handleRedirect(link) {
     window.open(link, '_blank')
   }
 
   function handleComponent(component) {
-      setToRender(component);
+    storage.setItem("toRender", component);
+    setToRender(component);
+    console.log(storage.getItem("toRender"));
+      // setToRender(component);
   }
 
   if(toRender ==="Experiences") {
@@ -29,7 +41,7 @@ function App() {
 
   if (toRender === "Coursework") {
       return(
-          <Coursework />
+          <AllCourses />
       )
   }
 
