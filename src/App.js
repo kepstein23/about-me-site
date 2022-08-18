@@ -87,6 +87,8 @@ function App() {
         </div>
       </div>
       <br/>
+      <div className="box" style={{display: "flex", justifyContent: "center"}}> <Coursework /> </div>
+      <br/>
       <div>
           <Languages />
       </div>

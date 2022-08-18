@@ -50,10 +50,13 @@ export function Coursework() {
       ]
 
     return (
-        <TextBox
-          title="Coursework Highlights"
-          texts={relevantCoursework}
-        />
+        <div style={{padding: "20px"}}>
+            <TextBox
+            title="Coursework Highlights"
+            texts={relevantCoursework}
+            />
+        </div>
+        
     )
     
 }

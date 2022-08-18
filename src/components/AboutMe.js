@@ -5,7 +5,7 @@ export function AboutMe() {
     return (
         <div style={{padding:"5px"}}>
             <div className="textBox">
-              <h1 className="heading">About Me</h1>
+              <h1 className="heading" style={{width: "60%", marginTop: "15px", padding: "5px"}}>About Me</h1>
               <div style={{padding: "5px", display:"flex"}}>
                 <div className="text" style={{padding: "5px", display: "flex", alignSelf: "center"}}>
                   <p>
