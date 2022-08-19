@@ -31,13 +31,13 @@ export function Header () {
     return (
         <div>
             <div className="header">
-                <h1 style={{marginTop: 0}}>Hi, my name is Kimberly Epstein.</h1>
+                <h1 style={{marginTop: "5px"}}>Hi, my name is Kimberly Epstein.</h1>
                 <div style={{padding:"5px", display:"flex", justifyContent:"center"}} > 
                     <div style={{padding:"5px"}}> 
                         <Button children="View my Resume" handleClick={() => handleRedirect("https://drive.google.com/file/d/1cOaLHX2OCSB5ua9_7MOLgwstVmWO9VvM/view?usp=sharing")}/>
                     </div>
                     <div style={{padding:"5px"}}>
-                        <Button handleClick={() => handleRedirect("https://github.com/kepstein23")} children="View my Github"/>
+                        <Button handleClick={() => handleRedirect("https://github.com/kepstein23")} children="View my GitHub"/>
                     </div>
                     <div style={{padding:"5px"}}>
                         <Button handleClick={() => handleRedirect("https://www.linkedin.com/in/kimberly-epstein/")} children="Connect on LinkedIn" />

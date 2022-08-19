@@ -2,6 +2,9 @@ import React, {useState, useEffect, Children} from "react";
 import Collapsible from "react-collapsible";
 import App from "../App";
 import { Button } from "./Button";
+import { Experiences } from "./Experiences";
+import { Languages } from "./Languages";
+import { Coursework } from "./Coursework";
 
 export function Titles ({name, icon}) {
     return (
@@ -15,27 +18,72 @@ export function Titles ({name, icon}) {
 
 export function AllCourses() {
     const storage = window.localStorage;
-    const [toRender, setToRender] = useState(window.localStorage.getItem("toRender"));
-
+    const [toRender, setToRender] = useState(storage.getItem("toRender"))
     useEffect(() => {
-        console.log(window.localStorage.getItem("toRender"))
-        window.localStorage.setItem('toRender', toRender);
-    })
-
+      storage.setItem('toRender', "App")
+    }, [])
+    useEffect(() => {
+      storage.setItem('toRender', toRender);
+    }, [toRender])
+  
+    // const [toRender, setToRender] = useState("App");
+  
+    function handleRedirect(link) {
+      window.open(link, '_blank')
+    }
+  
     function handleComponent(component) {
-        storage.setItem("toRender", component);
-        setToRender(component);
-        console.log(storage.getItem("toRender"));
+      storage.setItem("toRender", component);
+      setToRender(component);
+      console.log(storage.getItem("toRender"));
+        // setToRender(component);
+    }
+  
+    if(toRender ==="Experiences") {
+        return(
+            <Experiences />
+        )
+    }
+  
+    if (toRender === "Languages") {
+      return(
+          <Languages />
+      )
+    }
+  
+    if (toRender === "Project") {
+      return(
+          <Coursework />
+      )
     }
 
-    if(toRender === "App") {
-        return(<App />);
-    }
+    if (toRender === "App") {
+        return(
+            <App />
+        )
+      }
 
     return (
         <div >
-            <div style={{margin: "18px"}}>
-                <Button handleClick={() => handleComponent("App")} children="Back to Home"/>
+            <div className="menu-bar" style={{display:"flex", justifyContent:"center"}} >
+                {/* <div style={{padding:"5px"}}> 
+                <Button handleClick={() => handleComponent("Languages")} children="Campus Involvement" />
+                </div> */}
+                <div style={{padding:"5px"}}> 
+                <Button className="button-dark" handleClick={() => handleComponent("App")} children="Home" />
+                </div>
+                <div style={{padding:"5px"}}> 
+                <Button className="button-dark" handleClick={() => handleComponent("Project")} children="Project Highlights" />
+                </div>
+                <div style={{padding:"5px"}}> 
+                <Button className="button-dark" handleClick={() => handleComponent("Languages")} children="Language Proficiencies" />
+                </div>
+                <div style={{padding:"5px"}}> 
+                <Button className="button-dark" handleClick={() => handleComponent("Coursework")} children="Relevant Coursework" />
+                </div>
+                <div style={{padding:"5px"}}>
+                <Button className="button-dark" handleClick={() => handleComponent("Experiences")} children="Recent Work Experience"/>
+                </div>
             </div>
             
             <div className="box">
@@ -47,6 +95,7 @@ export function AllCourses() {
                 <br/>
 
                 <Collapsible trigger={<Titles name="Fall 2022 (Upcoming)" icon="+"/>} triggerWhenOpen={<Titles name="Fall 2022" icon="-"/>}>
+                    <br/>
                     <div className="textBox">
                         <br />
                         <div className="solid-text">
@@ -85,6 +134,7 @@ export function AllCourses() {
                 <br/>
 
                 <Collapsible trigger={<Titles name="Spring 2022" icon="+"/>} triggerWhenOpen={<Titles name="Spring 2022" icon="-"/>}>
+                    <br/>
                     <div className="textBox">
                         <br />
                         <div className="solid-text">
@@ -143,7 +193,8 @@ export function AllCourses() {
                 <br/>
 
                 <Collapsible trigger={<Titles name="Fall 2021" icon="+"/>} triggerWhenOpen={<Titles name="Fall 2021" icon="-"/>}>
-                <div className="textBox">
+                <br/>
+                    <div className="textBox">
                         <br />
 
                         <div className="solid-text">
@@ -186,7 +237,8 @@ export function AllCourses() {
                 <br/>
 
                 <Collapsible trigger={<Titles name="Spring 2021" icon="+"/>} triggerWhenOpen={<Titles name="Spring 2021" icon="-"/>}>
-                <div className="textBox">
+                <br/>
+                    <div className="textBox">
                         <br />
 
                         <div className="solid-text">
@@ -224,7 +276,8 @@ export function AllCourses() {
                 <br/>
 
                 <Collapsible trigger={<Titles name="Fall 2020" icon="+"/>} triggerWhenOpen={<Titles name="Fall 2020" icon="-"/>}>
-                <div className="textBox">
+                    <br/>
+                    <div className="textBox">
                         <br />
                         <div className="solid-text">
                             <br />

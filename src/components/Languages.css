@@ -41,15 +41,15 @@
   text-align: right; /* Right-align text */
   padding-top: 10px; /* Add top padding */
   padding-bottom: 10px; /* Add bottom padding */
-  color: #2e474e80;
+  color: #FFFF;
 }
 
-.java {width: 90%; background-color: #a3c4c9; border: 1px solid #a5acad} /* Green */
-.javascript {width: 85%; background-color: #a3c4c9; border: 1px solid #a5acad} /* Blue */
-.python {width: 70%; background-color: #a3c4c9; border: 1px solid #a5acad} /* Red */
-.r {width: 65%; background-color: #a3c4c9; border: 1px solid #a5acad} /* Dark Grey */
-.html {width: 70%; background-color: #a3c4c9; border: 1px solid #a5acad}
-.css {width: 60%; background-color: #a3c4c9; border: 1px solid #a5acad}
-.ocaml {width: 50%; background-color: #a3c4c9; border: 1px solid #a5acad}
-.php {width: 40%; background-color: #a3c4c9; border: 1px solid #a5acad} 
+.java {width: 90%; background-color: #095f79; border: 1px solid #095f79} /* Green */
+.javascript {width: 85%; background-color: #095f79; border: 1px solid #095f79} /* Blue */
+.python {width: 70%; background-color: #095f79; border: 1px solid #095f79} /* Red */
+.r {width: 65%; background-color: #095f79; border: 1px solid #095f79} /* Dark Grey */
+.html {width: 70%; background-color: #095f79; border: 1px solid #095f79}
+.css {width: 60%; background-color: #095f79; border: 1px solid #095f79}
+.ocaml {width: 50%; background-color: #095f79; border: 1px solid #095f79}
+.php {width: 40%; background-color: #095f79; border: 1px solid #095f79} 
 

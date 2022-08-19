@@ -21,7 +21,7 @@ export function Button({
     <button
         type={type}
         onClick={handleClick}
-        className='button'
+        className= {className || 'button'}
         autoFocus={autoFocus}
         id={id}
     >

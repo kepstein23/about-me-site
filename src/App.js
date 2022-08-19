@@ -49,7 +49,13 @@ function App() {
     return(
         <Languages />
     )
-}
+  }
+
+  if (toRender === "Project") {
+    return(
+        <Coursework />
+    )
+  }
 
   const aboutMeText = [
     {
@@ -69,42 +75,64 @@ function App() {
 
 
   return (
-    <div className="background" style={{padding: "0", backgroundColor: "487583"}} class="flex=container">
-      <br/>
-      <div >
-        <div>
-          <Header />
-        </div>
-      </div>
-      <br />
-      <div className="box" style={{display: "flex", justifyContent: "center"}}>
-        <div style={{display: "flex", alignSelf: "center"}}> 
-          <img style={{border: "2px solid #487583", borderRadius: "10px"}}src={headshot} height="368" width="450"></img>
-        </div>
-        <div >
-          <div style={{alignSelf: "center"}}>
-            <AboutMe />
-            <div style={{padding:"5px", paddingTop: "30px", display:"flex", justifyContent:"center"}} >
+    <div>
+      <div className="menu-bar" style={{display:"flex", justifyContent:"center"}} >
             {/* <div style={{padding:"5px"}}> 
               <Button handleClick={() => handleComponent("Languages")} children="Campus Involvement" />
             </div> */}
             <div style={{padding:"5px"}}> 
-              <Button handleClick={() => handleComponent("Coursework")} children="Relevant Coursework" />
+              <Button className="button-dark" handleClick={() => handleComponent("Home")} children="Home" />
+            </div>
+            <div style={{padding:"5px"}}> 
+              <Button className="button-dark" handleClick={() => handleComponent("Project")} children="Project Highlights" />
+            </div>
+            <div style={{padding:"5px"}}> 
+              <Button className="button-dark" handleClick={() => handleComponent("Languages")} children="Language Proficiencies" />
+            </div>
+            <div style={{padding:"5px"}}> 
+              <Button className="button-dark" handleClick={() => handleComponent("Coursework")} children="Relevant Coursework" />
             </div>
             <div style={{padding:"5px"}}>
-              <Button handleClick={() => handleComponent("Experiences")} children="Recent Work Experience"/>
+              <Button className="button-dark" handleClick={() => handleComponent("Experiences")} children="Recent Work Experience"/>
             </div>
+        </div>
+      <div className="background" style={{padding: "0", backgroundColor: "487583"}} class="flex=container">
+        <br/>
+        <div >
+          <div>
+            <Header />
           </div>
         </div>
+        <br />
+        <div className="box" style={{display: "flex", justifyContent: "center"}}>
+          <div style={{display: "flex", alignSelf: "center"}}> 
+            <img style={{border: "2px solid #487583", borderRadius: "10px"}}src={headshot} height="368" width="450"></img>
+          </div>
+          <div >
+            <div style={{alignSelf: "center"}}>
+              <AboutMe />
+              <div style={{padding:"5px", paddingTop: "30px", display:"flex", justifyContent:"center"}} >
+              {/* <div style={{padding:"5px"}}> 
+                <Button handleClick={() => handleComponent("Languages")} children="Campus Involvement" />
+              </div> */}
+              {/* <div style={{padding:"5px"}}> 
+                <Button handleClick={() => handleComponent("Coursework")} children="Relevant Coursework" />
+              </div>
+              <div style={{padding:"5px"}}>
+                <Button handleClick={() => handleComponent("Experiences")} children="Recent Work Experience"/>
+              </div> */}
+            </div>
+          </div>
+          </div>
         </div>
+        <br/>
+        {/* <div className="box" style={{display: "flex", justifyContent: "center"}}> <Coursework /> </div> */}
+        <br/>
+        {/* <div>
+            <Languages />
+        </div> */}
+        
       </div>
-      <br/>
-      <div className="box" style={{display: "flex", justifyContent: "center"}}> <Coursework /> </div>
-      <br/>
-      <div>
-          <Languages />
-      </div>
-      
     </div>
   );
 }

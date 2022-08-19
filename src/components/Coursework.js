@@ -1,7 +1,57 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { TextBox } from "./TextBox";
+import { Button } from "./Button";
+import { Experiences } from "./Experiences";
+import { Languages } from "./Languages";
+import { AllCourses } from "./AllCourses";
+import App from "../App";
 
 export function Coursework() {
+  const storage = window.localStorage;
+  const [toRender, setToRender] = useState(storage.getItem("toRender"))
+  useEffect(() => {
+    storage.setItem('toRender', "App")
+  }, [])
+  useEffect(() => {
+    storage.setItem('toRender', toRender);
+  })
+
+  // const [toRender, setToRender] = useState("App");
+
+  function handleRedirect(link) {
+    window.open(link, '_blank')
+  }
+
+  function handleComponent(component) {
+    storage.setItem("toRender", component);
+    setToRender(component);
+    console.log(storage.getItem("toRender"));
+      // setToRender(component);
+  }
+
+  if(toRender ==="Experiences") {
+      return(
+          <Experiences />
+      )
+  }
+
+  if (toRender === "Coursework") {
+      return(
+          <AllCourses />
+      )
+  }
+
+  if (toRender === "Languages") {
+    return(
+        <Languages />
+    )
+  }
+
+  if (toRender === "App") {
+    return(
+        <App />
+    )
+  }
 
     const relevantCoursework = [
         {
@@ -50,15 +100,36 @@ export function Coursework() {
       ]
 
     return (
-        <div style={{padding: "20px"}}>
+      <div>
+        <div className="menu-bar" style={{display:"flex", justifyContent:"center"}} >
+          {/* <div style={{padding:"5px"}}> 
+            <Button handleClick={() => handleComponent("Languages")} children="Campus Involvement" />
+          </div> */}
+          <div style={{padding:"5px"}}> 
+            <Button className="button-dark" handleClick={() => handleComponent("App")} children="Home" />
+          </div>
+          <div style={{padding:"5px"}}> 
+            <Button className="button-dark" handleClick={() => handleComponent("Project")} children="Project Highlights" />
+          </div>
+          <div style={{padding:"5px"}}> 
+            <Button className="button-dark" handleClick={() => handleComponent("Languages")} children="Language Proficiencies" />
+          </div>
+          <div style={{padding:"5px"}}> 
+            <Button className="button-dark" handleClick={() => handleComponent("Coursework")} children="Relevant Coursework" />
+          </div>
+          <div style={{padding:"5px"}}>
+            <Button className="button-dark" handleClick={() => handleComponent("Experiences")} children="Recent Work Experience"/>
+          </div>
+        </div>
+        <div className="box" style={{padding: "20px"}}>
           <div className="textBox">
             <br />
             <h1 className="heading">
-              Coursework Highlights
+              Project Highlights
             </h1>
             <br/>
-            <div className="solid-text" style={{width: "90%"}}>
-              <h3 className="subtitle">CIS 1210 Programming Languages and Techniques II</h3>
+            {/* <div className="solid-text" style={{width: "90%"}}>
+              <h3 className="subtitle">Programming Languages and Techniques II</h3>
               <br/>
               <p className="text">
                 This course covers popular data structures, such as stacks, queues, maps, trees, graphs, and popular algorithms, 
@@ -70,10 +141,10 @@ export function Coursework() {
               </p>
               <br/>
             </div>
-            <br/>
+            <br/> */}
 
             <div className="solid-text" style={{width: "90%"}}>
-              <h3 className="subtitle">CIS 3500 Software Design/Engineering</h3>
+              <h3 className="subtitle">Software Design/Engineering</h3>
               <br/>
               <p className="text">
                 This course explored the full software development process from design to front end, to back end, to testing
@@ -85,7 +156,7 @@ export function Coursework() {
                 and mobile app development experience, and practiced the entire development cycle from early design stages to depoloyment.
               </p>
               <br/>
-              <div style={{display: "flex", padding: "5px", justifyContent: "space-between"}}> 
+              <div style={{display: "flex", justifyContent: "space-between", width: "80%", margin: "auto"}}> 
                 <a 
                   style={{textDecoration: "none"}}
                   className="button-dark" 
@@ -109,7 +180,7 @@ export function Coursework() {
             <br/>
 
             <div className="solid-text" style={{width: "90%"}}>
-              <h3 className="subtitle">MKTG 2370 Brain Science for Business</h3>
+              <h3 className="subtitle">Brain Science for Business</h3>
               <br/>
               <p className="text">
                 This course explored various neuromarketing techniques and how they impact business, education,
@@ -141,6 +212,7 @@ export function Coursework() {
 
           </div>
         </div>
+      </div>
         
     )
     
