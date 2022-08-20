@@ -122,7 +122,7 @@ export function Coursework() {
           </div>
         </div> */}
         <div className="box" style={{padding: "20px"}}>
-          <div className="solid-text" style={{}}>
+          <div className="solid-text" style={{width: "60%"}}>
             <h1 className="heading" style={{width: "50%", marginTop: "20px", marginBottom: "20px"}}>
               Project Highlights
             </h1>

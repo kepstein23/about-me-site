@@ -77,7 +77,7 @@ export function Languages() {
     return (
         <div>
             <div className="box">
-                <div className="solid-text" style={{width: "85%"}}>
+                <div className="solid-text" style={{width: "70%"}}>
                     <h1 className="heading" style={{width: "60%", marginTop: "20px", marginBottom: "20px"}}>
                         Coding Language Proficiency
                     </h1>

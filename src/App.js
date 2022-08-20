@@ -12,6 +12,12 @@ import { Languages } from './components/Languages';
 
 function App() {
   const experiences = useRef(null);
+  const languages = useRef(null);
+  const aboutMe = useRef(null);
+  const allCourses = useRef(null);
+  const highlights = useRef(null);
+  const top = useRef(null);
+
   const storage = window.localStorage;
   const [toRender, setToRender] = useState(storage.getItem("toRender"))
 
@@ -24,6 +30,21 @@ function App() {
 
   const handleExperiences = () => {
     experiences.current?.scrollIntoView({behavior: 'smooth'});
+  };
+  const handleAboutMe = () => {
+    aboutMe.current?.scrollIntoView({behavior: 'smooth'});
+  };
+  const handleLanguages = () => {
+    languages.current?.scrollIntoView({behavior: 'smooth'});
+  };
+  const handleAllCourses = () => {
+    allCourses.current?.scrollIntoView({behavior: 'smooth'});
+  };
+  const handleHighlights= () => {
+    highlights.current?.scrollIntoView({behavior: 'smooth'});
+  };
+  const handleTop = () => {
+    top.current?.scrollIntoView({behavior: 'smooth'});
   };
 
   // const [toRender, setToRender] = useState("App");
@@ -87,25 +108,30 @@ function App() {
               <Button handleClick={() => handleComponent("Languages")} children="Campus Involvement" />
             </div> */}
             <div style={{padding:"5px"}}> 
-              <Button className="button-dark" handleClick={() => handleComponent("Home")} children="Home" />
-            </div>
-            <div style={{padding:"5px"}}> 
-              <Button className="button-dark" handleClick={() => handleComponent("Project")} children="Project Highlights" />
-            </div>
-            <div style={{padding:"5px"}}> 
-              <Button className="button-dark" handleClick={() => handleComponent("Languages")} children="Language Proficiencies" />
-            </div>
-            <div style={{padding:"5px"}}> 
-              <Button className="button-dark" handleClick={() => handleComponent("Coursework")} children="Relevant Coursework" />
+              <Button className="button-dark" handleClick={handleTop} children="Home" />
             </div>
             <div style={{padding:"5px"}}>
-              <Button className="button-dark" handleClick={() => handleComponent("Experiences")} children="Recent Work Experience"/>
+              <Button className="button-dark" handleClick={handleAboutMe} children="About Me"/>
             </div>
+            <div style={{padding:"5px"}}>
+              <Button className="button-dark" handleClick={handleExperiences} children="Recent Work Experience"/>
+            </div>
+            <div style={{padding:"5px"}}> 
+              <Button className="button-dark" handleClick={handleHighlights} children="Project Highlights" />
+            </div>
+            <div style={{padding:"5px"}}> 
+              <Button className="button-dark" handleClick={handleAllCourses} children="Relevant Coursework" />
+            </div>
+            <div style={{padding:"5px"}}> 
+              <Button className="button-dark" handleClick={handleLanguages} children="Language Proficiencies" />
+            </div>
+            
+            
         </div>
       <div className="background" style={{padding: "0", backgroundColor: "487583"}} class="flex=container">
         <br/>
         <div >
-          <div>
+          <div ref={top}>
             <Header />
           </div>
         </div>
@@ -115,7 +141,7 @@ function App() {
             <img style={{border: "2px solid #487583", borderRadius: "10px"}}src={headshot} height="368" width="450"></img>
           </div>
           <div >
-            <div style={{alignSelf: "center"}}>
+            <div ref={aboutMe} style={{alignSelf: "center"}}>
               <AboutMe />
               <div style={{padding:"5px", paddingTop: "30px", display:"flex", justifyContent:"center"}} >
               {/* <div style={{padding:"5px"}}> 
@@ -135,21 +161,23 @@ function App() {
         {/* <div className="box" style={{display: "flex", justifyContent: "center"}}> <Coursework /> </div> */}
         <br/>
         
-        <div>
-            <Languages />
+        
+        <div ref={experiences}>
+          <Experiences />
         </div>
         <br/>
-        <div>
-          <AllCourses />
-        </div>
-        <br/>
-        <div >
+        <div ref={highlights}>
           <Coursework />
         </div>
         <br/>
-        <div>
-          <Experiences />
+        <div ref={allCourses}>
+          <AllCourses />
         </div>
+        <br/>
+        <div ref={languages}>
+            <Languages />
+        </div>
+        
         
       </div>
     </div>

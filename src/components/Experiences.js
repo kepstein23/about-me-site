@@ -95,7 +95,7 @@ export function Experiences() {
             </div> */}
 
         <div className="box">
-          <div className="solid-text" style={{}}>
+          <div className="solid-text" style={{width: "60%"}}>
             <h1 className="heading" style={{width: "50%", marginTop: "20px", marginBottom: "20px"}}>
               Recent Work Experiences
             </h1>
