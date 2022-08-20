@@ -104,7 +104,7 @@ function App() {
           </div>
         </div>
         <br />
-        <div className="box" style={{display: "flex", justifyContent: "center"}}>
+        <div className="box-light" style={{display: "flex", justifyContent: "center", backgroundColor: "#f1fcff"}}>
           <div style={{display: "flex", alignSelf: "center"}}> 
             <img style={{border: "2px solid #487583", borderRadius: "10px"}}src={headshot} height="368" width="450"></img>
           </div>
@@ -121,16 +121,22 @@ function App() {
               <div style={{padding:"5px"}}>
                 <Button handleClick={() => handleComponent("Experiences")} children="Recent Work Experience"/>
               </div> */}
+              </div>
             </div>
-          </div>
           </div>
         </div>
         <br/>
         {/* <div className="box" style={{display: "flex", justifyContent: "center"}}> <Coursework /> </div> */}
         <br/>
-        {/* <div>
+        
+        <div>
             <Languages />
-        </div> */}
+        </div>
+        <br/>
+        <div className='box-light' style={{display: "flex", width: "95%", justifyContent: "space-between"}}>
+          <AllCourses />
+          <Coursework />
+        </div>
         
       </div>
     </div>

@@ -64,32 +64,31 @@ export function AllCourses() {
       }
 
     return (
-        <div >
-            <div className="menu-bar" style={{display:"flex", justifyContent:"center"}} >
-                {/* <div style={{padding:"5px"}}> 
-                <Button handleClick={() => handleComponent("Languages")} children="Campus Involvement" />
-                </div> */}
-                <div style={{padding:"5px"}}> 
-                <Button className="button-dark" handleClick={() => handleComponent("App")} children="Home" />
-                </div>
-                <div style={{padding:"5px"}}> 
-                <Button className="button-dark" handleClick={() => handleComponent("Project")} children="Project Highlights" />
-                </div>
-                <div style={{padding:"5px"}}> 
-                <Button className="button-dark" handleClick={() => handleComponent("Languages")} children="Language Proficiencies" />
-                </div>
-                <div style={{padding:"5px"}}> 
-                <Button className="button-dark" handleClick={() => handleComponent("Coursework")} children="Relevant Coursework" />
-                </div>
-                <div style={{padding:"5px"}}>
-                <Button className="button-dark" handleClick={() => handleComponent("Experiences")} children="Recent Work Experience"/>
-                </div>
-            </div>
-            
-            <div className="box">
+    //     <div className="menu-bar" style={{display:"flex", justifyContent:"center"}} >
+    //     {/* <div style={{padding:"5px"}}> 
+    //     <Button handleClick={() => handleComponent("Languages")} children="Campus Involvement" />
+    //     </div> */}
+    //     <div style={{padding:"5px"}}> 
+    //     <Button className="button-dark" handleClick={() => handleComponent("App")} children="Home" />
+    //     </div>
+    //     <div style={{padding:"5px"}}> 
+    //     <Button className="button-dark" handleClick={() => handleComponent("Project")} children="Project Highlights" />
+    //     </div>
+    //     <div style={{padding:"5px"}}> 
+    //     <Button className="button-dark" handleClick={() => handleComponent("Languages")} children="Language Proficiencies" />
+    //     </div>
+    //     <div style={{padding:"5px"}}> 
+    //     <Button className="button-dark" handleClick={() => handleComponent("Coursework")} children="Relevant Coursework" />
+    //     </div>
+    //     <div style={{padding:"5px"}}>
+    //     <Button className="button-dark" handleClick={() => handleComponent("Experiences")} children="Recent Work Experience"/>
+    //     </div>
+    // </div>
+        <div style={{display: "flex", justifyContent: "center"}}>
+            <div className="box" style={{margin: "0px"}}>
                 <div className="solid-text" style={{}}>
                     <h1 className="heading" style={{width: "85%", marginTop: "20px", marginBottom: "20px"}}>
-                        Click below to view my relevant coursework for each term.
+                        All Relevant Coursework.
                     </h1>
                 </div>
                 <br/>

@@ -267,3 +267,15 @@ body{
   margin-bottom: 15px;
   margin-top: 0px
 }
+
+.box-light {
+  background-color: #f1fcff;
+  border: 2px solid #487583;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 2px 4px 8px;
+  margin: auto;
+  width: 80%;
+  padding: 5%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
