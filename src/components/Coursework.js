@@ -101,10 +101,10 @@ export function Coursework() {
 
     return (
       <div>
-        <div className="menu-bar" style={{display:"flex", justifyContent:"center"}} >
-          {/* <div style={{padding:"5px"}}> 
+        {/* <div className="menu-bar" style={{display:"flex", justifyContent:"center"}} >
+          <div style={{padding:"5px"}}> 
             <Button handleClick={() => handleComponent("Languages")} children="Campus Involvement" />
-          </div> */}
+          </div>
           <div style={{padding:"5px"}}> 
             <Button className="button-dark" handleClick={() => handleComponent("App")} children="Home" />
           </div>
@@ -120,7 +120,7 @@ export function Coursework() {
           <div style={{padding:"5px"}}>
             <Button className="button-dark" handleClick={() => handleComponent("Experiences")} children="Recent Work Experience"/>
           </div>
-        </div>
+        </div> */}
         <div className="box" style={{padding: "20px"}}>
           <div className="textBox">
             <br />
