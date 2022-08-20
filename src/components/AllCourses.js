@@ -86,9 +86,9 @@ export function AllCourses() {
     // </div>
         <div style={{display: "flex", justifyContent: "center"}}>
             <div className="box" style={{margin: "0px"}}>
-                <div className="solid-text" style={{}}>
-                    <h1 className="heading" style={{width: "85%", marginTop: "20px", marginBottom: "20px"}}>
-                        All Relevant Coursework.
+                <div className="solid-text" style={{width: "70%"}}>
+                    <h1 className="heading" style={{width: "60%", marginTop: "20px", marginBottom: "20px"}}>
+                        Relevant Coursework
                     </h1>
                 </div>
                 <br/>

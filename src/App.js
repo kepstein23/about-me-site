@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useState, useRef} from 'react';
 import {Button} from './components/Button';
 import headshot from "./headshot.jpg"
 import {AboutMe} from './components/AboutMe'
@@ -11,14 +11,20 @@ import { Experiences } from './components/Experiences';
 import { Languages } from './components/Languages';
 
 function App() {
+  const experiences = useRef(null);
   const storage = window.localStorage;
   const [toRender, setToRender] = useState(storage.getItem("toRender"))
+
   useEffect(() => {
     storage.setItem('toRender', "App")
   }, [])
   useEffect(() => {
     storage.setItem('toRender', toRender);
   })
+
+  const handleExperiences = () => {
+    experiences.current?.scrollIntoView({behavior: 'smooth'});
+  };
 
   // const [toRender, setToRender] = useState("App");
 
@@ -133,9 +139,16 @@ function App() {
             <Languages />
         </div>
         <br/>
-        <div className='box-light' style={{display: "flex", width: "95%", justifyContent: "space-between"}}>
+        <div>
           <AllCourses />
+        </div>
+        <br/>
+        <div >
           <Coursework />
+        </div>
+        <br/>
+        <div>
+          <Experiences />
         </div>
         
       </div>

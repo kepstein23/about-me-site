@@ -77,10 +77,16 @@ export function Languages() {
     return (
         <div>
             <div className="box">
+                <div className="solid-text" style={{width: "85%"}}>
+                    <h1 className="heading" style={{width: "60%", marginTop: "20px", marginBottom: "20px"}}>
+                        Coding Language Proficiency
+                    </h1>
+                </div>
+                <br/>
                 <div className="textBox" style={{padding: "5px"}}>
-                    <div style={{padding: "10px", display: "flex", marginTop: "15px"}}>
+                    {/* <div style={{padding: "10px", display: "flex", marginTop: "15px"}}>
                         <h1 className="heading" style={{}}>Coding Language Proficiency</h1>
-                    </div>
+                    </div> */}
                     
                     <div style={{padding: "10px", margin: "15px"}}>
                         <h3 className="subtitle" style={{color:"white"}}>Java</h3>

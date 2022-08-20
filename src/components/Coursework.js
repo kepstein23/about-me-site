@@ -122,12 +122,16 @@ export function Coursework() {
           </div>
         </div> */}
         <div className="box" style={{padding: "20px"}}>
-          <div className="textBox">
-            <br />
-            <h1 className="heading">
+          <div className="solid-text" style={{}}>
+            <h1 className="heading" style={{width: "50%", marginTop: "20px", marginBottom: "20px"}}>
               Project Highlights
             </h1>
-            <br/>
+          </div>
+          <br/>
+            
+          <div className="textBox">
+            <br />
+
             {/* <div className="solid-text" style={{width: "90%"}}>
               <h3 className="subtitle">Programming Languages and Techniques II</h3>
               <br/>
@@ -211,6 +215,7 @@ export function Coursework() {
             <br/>
 
           </div>
+          <br/>
         </div>
       </div>
         
