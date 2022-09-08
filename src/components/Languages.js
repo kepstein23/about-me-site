@@ -92,8 +92,8 @@ export function Languages() {
                         {/* <h3 className="subtitle" style={{color:"white"}}>Java</h3> */}
                         <div class="container">
                         <div class="skills java" style={{display: "flex", justifyContent: "space-between"}}>
-                            <div className="subtitle" style={{fontSize: "26px", fontWeight: "thick"}}>Java</div>
-                            <div className="subtitle">90%</div>
+                            <div className="subtitle" style={{fontSize: "20px", paddingLeft: "7px", fontWeight: "bolder"}}>Java</div>
+                            <div>90%</div>
                         </div>
                         </div>
 

@@ -131,7 +131,7 @@ function App() {
       <div className="background" style={{padding: "0", backgroundColor: "487583"}} class="flex=container">
         <br/>
         <div >
-          <div ref={top}>
+          <div ref={top} style={{marginTop: "75px"}}>
             <Header />
           </div>
         </div>
