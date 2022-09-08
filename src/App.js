@@ -127,7 +127,7 @@ function App() {
             </div>
             
             
-        </div>
+      </div>
       <div className="background" style={{padding: "0", backgroundColor: "487583"}} class="flex=container">
         <br/>
         <div >

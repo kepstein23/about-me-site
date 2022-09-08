@@ -116,7 +116,7 @@
   font-family: "Candara";
   margin-top: 0;
   margin-bottom: 5px;
-  margin-left: 20px;
+  margin-left: 15px;
   margin-right: 15px;
   font-size: 20px;
 }
@@ -269,7 +269,7 @@ body{
 }
 
 .box-light {
-  background-color: #f1fcff;
+  background-color: #bbdce4;
   border: 2px solid #487583;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.1) 2px 4px 8px;
