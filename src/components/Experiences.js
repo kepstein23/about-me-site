@@ -73,10 +73,10 @@ export function Experiences() {
 
     return (
       <div>
-        <div className="menu-bar" style={{display:"flex", justifyContent:"center"}} >
-                {/* <div style={{padding:"5px"}}> 
+        {/* <div className="menu-bar" style={{display:"flex", justifyContent:"center"}} >
+                <div style={{padding:"5px"}}> 
                 <Button handleClick={() => handleComponent("Languages")} children="Campus Involvement" />
-                </div> */}
+                </div>
                 <div style={{padding:"5px"}}> 
                 <Button className="button-dark" handleClick={() => handleComponent("Home")} children="Home" />
                 </div>
@@ -92,14 +92,16 @@ export function Experiences() {
                 <div style={{padding:"5px"}}>
                 <Button className="button-dark" handleClick={() => handleComponent("Experiences")} children="Recent Work Experience"/>
                 </div>
-            </div>
+            </div> */}
 
         <div className="box">
-          <div className="textBox">
-            <br />
-            <h1 className="heading">
+          <div className="solid-text" style={{width: "60%", marginBottom: "40px"}}>
+            <h1 className="heading" style={{width: "50%", marginTop: "20px", marginBottom: "20px"}}>
               Recent Work Experiences
             </h1>
+          </div>
+          <br/>
+          <div className="textBox">
             <br/>
             <div className="solid-text" style={{width: "90%"}}>
               <h3 className="subtitle">Computational Social Science Lab</h3>
@@ -195,7 +197,6 @@ export function Experiences() {
               <br />
             </div>
             <br/>
-
           </div>
         </div>
       </div>
