@@ -190,7 +190,7 @@ export function Experiences() {
                   href="https://www.ihmc.us/" 
                   target="_blank"
                 >
-                  Click here to learn more about this company.
+                  Click here to learn more about this company
                 </a>
                 <br/>
               </div>
