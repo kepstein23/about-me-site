@@ -174,13 +174,13 @@ export function Experiences() {
               <h3 className="subtitle">Institute for Human Machine Cognition</h3>
               <br/>
               <p className="text">
-              As a research intern, I designed, coded, and conducted a survey to ollect data 
+              As a research intern, I designed, coded, and conducted a survey to collect data 
               related to how participants perceive credibility of tweets related to COVID-19.  
               I first wrote a python script to extract relevant tweets from over 400 Twitter 
               users, then built the survey using HTML, CSS, and PHP.  This experience allowed 
               me to combine my interests of computer science and cognitive science, using 
-              cognitive science pricinples to design and conduct the study, but computer science
-               techniques to actually build the survey.
+              cognitive science pricinples to design and conduct the study and computer science
+              techniques to actually build the survey.
               </p>
               <br/>
               <div style={{display: "flex", padding: "5px", justifyContent: "center"}}> 

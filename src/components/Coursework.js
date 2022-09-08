@@ -167,7 +167,7 @@ export function Coursework() {
                   href="http://calm-beach-22652.herokuapp.com/" 
                   target="_blank"
                 >
-                  Click here to play "Guess Who".
+                  Click here and enter your name to play "Guess Who".
                 </a>
                 <a 
                   style={{textDecoration: "none"}}
