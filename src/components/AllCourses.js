@@ -308,7 +308,7 @@ export function AllCourses() {
                             </h1>
                             <br/>
                             <p className="text">
-                                As the first course in the intro computer science sequence, this course provudes a solid
+                                As the first course in the intro computer science sequence, this course provides a solid
                                 foundation in the Java programming language.  Beginning from the basics of variables and 
                                 data types, it continues through object-oriented programming techniques, building a firm
                                 knowledge of Java programming practices. It culminates in a final project of creating a 
