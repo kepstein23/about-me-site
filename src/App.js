@@ -136,7 +136,7 @@ function App() {
           </div>
         </div>
         <br />
-        <div className="box-light" style={{display: "flex", justifyContent: "center", backgroundColor: "#f1fcff"}}>
+        <div className="box" style={{display: "flex", justifyContent: "center"}}>
           <div style={{display: "flex", alignSelf: "center"}}> 
             <img style={{border: "2px solid #487583", borderRadius: "10px"}}src={headshot} height="368" width="450"></img>
           </div>

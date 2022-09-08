@@ -71,19 +71,19 @@ export function Menu() {
               <Button handleClick={() => handleComponent("Languages")} children="Campus Involvement" />
             </div> */}
             <div style={{padding:"5px"}}> 
-              <Button className="button-dark" handleClick={() => handleComponent("Home")} children="Home" />
+              <Button className="button-light" handleClick={() => handleComponent("Home")} children="Home" />
             </div>
             <div style={{padding:"5px"}}> 
-              <Button className="button-dark" handleClick={() => handleComponent("Project")} children="Project Highlights" />
+              <Button className="button-light" handleClick={() => handleComponent("Project")} children="Project Highlights" />
             </div>
             <div style={{padding:"5px"}}> 
-              <Button className="button-dark" handleClick={() => handleComponent("Languages")} children="Language Proficiencies" />
+              <Button className="button-light" handleClick={() => handleComponent("Languages")} children="Language Proficiencies" />
             </div>
             <div style={{padding:"5px"}}> 
-              <Button className="button-dark" handleClick={() => handleComponent("Coursework")} children="Relevant Coursework" />
+              <Button className="button-light" handleClick={() => handleComponent("Coursework")} children="Relevant Coursework" />
             </div>
             <div style={{padding:"5px"}}>
-              <Button className="button-dark" handleClick={() => handleComponent("Experiences")} children="Recent Work Experience"/>
+              <Button className="button-light" handleClick={() => handleComponent("Experiences")} children="Recent Work Experience"/>
             </div>
         </div>
     )
