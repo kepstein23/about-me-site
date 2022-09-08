@@ -83,6 +83,7 @@ export function Languages() {
                     </h1>
                 </div>
                 <br/>
+                <br/>
                 <div className="textBox" style={{padding: "5px"}}>
                     {/* <div style={{padding: "10px", display: "flex", marginTop: "15px"}}>
                         <h1 className="heading" style={{}}>Coding Language Proficiency</h1>
@@ -96,40 +97,61 @@ export function Languages() {
                             <div>90%</div>
                         </div>
                         </div>
+                        <br/>
 
-                        <h3 className="subtitle" style={{color:"white"}}>JavaScript</h3>
                         <div class="container">
-                        <div class="skills javascript">85%</div>
+                        <div class="skills javascript" style={{display: "flex", justifyContent: "space-between"}}>
+                            <div className="subtitle" style={{fontSize: "20px", paddingLeft: "7px", fontWeight: "bolder"}}>JavaScript</div>
+                            <div>85%</div>
                         </div>
-
-                        <h3 className="subtitle" style={{color:"white"}}>Python</h3>
-                        <div class="container">
-                        <div class="skills python">70%</div>
                         </div>
+                        <br/>
 
-                        <h3 className="subtitle" style={{color:"white"}}>R</h3>
                         <div class="container">
-                        <div class="skills r">65%</div>
+                        <div class="skills python" style={{display: "flex", justifyContent: "space-between"}}>
+                            <div className="subtitle" style={{fontSize: "20px", paddingLeft: "7px", fontWeight: "bolder"}}>Python</div>
+                            <div>75%</div>
                         </div>
-
-                        <h3 className="subtitle" style={{color:"white"}}>HTML</h3>
-                        <div class="container">
-                        <div class="skills html">70%</div>
                         </div>
+                        <br/>
 
-                        <h3 className="subtitle" style={{color:"white"}}>CSS</h3>
                         <div class="container">
-                        <div class="skills css">60%</div>
+                        <div class="skills html" style={{display: "flex", justifyContent: "space-between"}}>
+                            <div className="subtitle" style={{fontSize: "20px", paddingLeft: "7px", fontWeight: "bolder"}}>HTML</div>
+                            <div>70%</div>
                         </div>
-
-                        <h3 className="subtitle" style={{color:"white"}}>OCaml</h3>
-                        <div class="container">
-                        <div class="skills ocaml">50%</div>
                         </div>
+                        <br/>
 
-                        <h3 className="subtitle" style={{color:"white"}}>PHP</h3>
                         <div class="container">
-                        <div class="skills php">40%</div>
+                        <div class="skills r" style={{display: "flex", justifyContent: "space-between"}}>
+                            <div className="subtitle" style={{fontSize: "20px", paddingLeft: "7px", fontWeight: "bolder"}}>R</div>
+                            <div>65%</div>
+                        </div>
+                        </div>
+                        <br/>
+
+                        <div class="container">
+                        <div class="skills css" style={{display: "flex", justifyContent: "space-between"}}>
+                            <div className="subtitle" style={{fontSize: "20px", paddingLeft: "7px", fontWeight: "bolder"}}>CSS</div>
+                            <div>60%</div>
+                        </div>
+                        </div>
+                        <br/>
+
+                        <div class="container">
+                        <div class="skills ocaml" style={{display: "flex", justifyContent: "space-between"}}>
+                            <div className="subtitle" style={{fontSize: "20px", paddingLeft: "7px", fontWeight: "bolder"}}>OCaml</div>
+                            <div>50%</div>
+                        </div>
+                        </div>
+                        <br/>
+
+                        <div class="container">
+                        <div class="skills php" style={{display: "flex", justifyContent: "space-between"}}>
+                            <div className="subtitle" style={{fontSize: "20px", paddingLeft: "7px", fontWeight: "bolder"}}>PHP</div>
+                            <div>40%</div>
+                        </div>
                         </div>
                         
                     </div>
