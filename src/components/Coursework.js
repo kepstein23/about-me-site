@@ -160,7 +160,7 @@ export function Coursework() {
                 and mobile app development experience, and practiced the entire development cycle from early design stages to depoloyment.
               </p>
               <br/>
-              <div style={{display: "flex", justifyContent: "space-between", width: "80%", margin: "auto"}}> 
+              <div style={{display: "flex", justifyContent: "center", width: "80%", margin: "auto"}}> 
                 <a 
                   style={{textDecoration: "none"}}
                   className="button-dark" 
@@ -168,14 +168,6 @@ export function Coursework() {
                   target="_blank"
                 >
                   Click here and enter your name to play "Guess Who".
-                </a>
-                <a 
-                  style={{textDecoration: "none"}}
-                  className="button-dark" 
-                  href="https://github.com/cis350/mood-tracker-team28" 
-                  target="_blank"
-                >
-                  Click here to view Cloud9 on GitHub.
                 </a>
                 <br/>
               </div>
@@ -189,8 +181,8 @@ export function Coursework() {
               <p className="text">
                 This course explored various neuromarketing techniques and how they impact business, education,
                 ethics, policy, etc. This course culminated in a class team competition, where each week two teams
-                would present give a one-minute pitch of a startup of their creation, while the other teams chose
-                how much \"PlattBucks\" they wanted to invest.  After investing, each team either won or lost Platt
+                would present a one-minute pitch of a startup of their creation, while the other teams chose
+                how much "PlattBucks" they wanted to invest.  After investing, each team either won or lost Platt
                 Bucks based on how well the professor thought the startup would thrive in the real world.  The 
                 startup my team created was a public health initiative in the form of a recipe app which subconsciously
                 incentivized users to make healthy choices when choosing recipes. Click below to learn more about our 

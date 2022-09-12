@@ -154,18 +154,6 @@ export function Experiences() {
                 a linguistics and cognitive science project and was my first in-depth experience
                 with building AIs.
               </p>
-              <br/>
-              <div style={{display: "flex", padding: "5px", justifyContent: "center"}}> 
-                <a 
-                  style={{textDecoration: "none"}}
-                  className="button-dark" 
-                  href="https://github.com/HagayV1/Networks-and-Reputation" 
-                  target="_blank"
-                >
-                  Click here to view this project on GitHub
-                </a>
-                <br/>
-              </div>
               <br />
             </div>
             <br/>
@@ -177,10 +165,10 @@ export function Experiences() {
               As a research intern, I designed, coded, and conducted a survey to collect data 
               related to how participants perceive credibility of tweets related to COVID-19.  
               I first wrote a python script to extract relevant tweets from over 400 Twitter 
-              users, then built the survey using HTML, CSS, and PHP.  This experience allowed 
+              users, then built the survey using HTML, CSS, and PHP.  This experience enabled
               me to combine my interests of computer science and cognitive science, using 
               cognitive science pricinples to design and conduct the study and computer science
-              techniques to actually build the survey.
+              techniques to build the survey.
               </p>
               <br/>
               <div style={{display: "flex", padding: "5px", justifyContent: "center"}}> 

@@ -104,7 +104,7 @@ export function AllCourses() {
                             </h1>
                             <br />
                             <p className="text">
-                                This course focused on computer architecture begins with transitors and computer hardware,
+                                This course, focused on computer architecture, begins with transitors and computer hardware,
                                 continues through low-level programming, and ends with an introduction to C.  The course 
                                 culminates in building a compiler from scratch and provides a foundational understanding of
                                 the computer as a physical instrument.
@@ -226,7 +226,7 @@ export function AllCourses() {
                             </h1>
                             <br />
                             <p className="text">
-                                This course essentially functions as a survey of the R coding language, with special attention to its 
+                                This course functions as a survey of the R coding language, with special attention to its 
                                 applications in the study of mind and language.  Covering concepts including data visualization, predictive
                                 algorithms, descriptive statistics, and statistical modeling and employing R libraries such as tidyverse
                                 and ggplot, this course provides useful skills for data processing and analysis applicable across disciplines.
@@ -284,7 +284,7 @@ export function AllCourses() {
                             </h1>
                             <br/>
                             <p className="text">
-                                This course functions as an introduction to the broader field of linguistics.  It includes a general 
+                                This course is an introduction to the broader field of linguistics.  It includes a general 
                                 survey of human language systems, including phonology, morphology, syntax, and psycholinguistics.
                                 The course explores language in the context of culture, and develops skills applicable across disciplines.
 
