@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import React, {useEffect, useState, useRef} from 'react';
 import {Button} from './components/Button';
@@ -103,6 +102,12 @@ function App() {
 
   return (
     <div>
+      <head>
+        <title>
+          Kimberly Epstein
+        </title>
+      </head>
+      
       <div className="menu-bar" style={{display:"flex", justifyContent:"center"}} >
             {/* <div style={{padding:"5px"}}> 
               <Button handleClick={() => handleComponent("Languages")} children="Campus Involvement" />
